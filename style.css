@@ -1,7 +1,6 @@
 body{
     margin: 0;
     min-height: 100vh;
-
     background:
     linear-gradient(
         180deg,
@@ -11,7 +10,6 @@ body{
         rgba(250, 240, 202, 0.55) 100%
     ),
     url("library.avif");
-
     color:#ffffff;
     background-size: cover;
     background-position: center;
@@ -28,7 +26,6 @@ header{
 }
 
 .logo{
-    
     color:#ffd700;
     font-family: 'Cinzel', serif;
     text-align: center;
@@ -39,14 +36,14 @@ header{
 
 .logo:hover{
      transform: scale(1.05);
-    
-}
+    }
 
 nav a{
     color:white;
     text-decoration: none;
     margin-left:20px;
 }
+
 nav a:visited{
     color:white;
 
@@ -54,8 +51,7 @@ nav a:visited{
 
 .search-box{
     margin-top: 15px;
-    
-}
+    }
 
 
 input {
@@ -77,19 +73,15 @@ input {
 #results div:hover {
     background: #ddd;
 }
+
 section{
     margin: 20px;
 }
-
-
-
 
 .search-box{
     text-align: center;
     margin: 20px;
 }
-
-
 
 .search-box input{
     width: 300px;
@@ -106,8 +98,6 @@ button{
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
-
-
 }
 
 .hero{
@@ -135,10 +125,10 @@ button{
     max-width: 800px;
     margin: auto;
 }
+
 .hero:hover{
     transform: scale(1.05);
-    
-}
+    }
 
 .genre{
     display: flex;
@@ -146,9 +136,6 @@ button{
     gap: 50px;
     padding: 60px;
 }
-
-
-
 
 .genre-image img{
     width: 300px;
@@ -160,6 +147,7 @@ button{
     transform: scale(1.05);
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
+
 .genre-content h4{
     font-family: 'Poppins', sans-serif;
     color: #1565c0;
@@ -175,18 +163,16 @@ button{
     letter-spacing: 2px;
     text-shadow: 1px 1px 4px rgba(255,255,255,0.3);
 }
+
 .genre-content:hover{
     transform: translateY(-5px);
 }
-
-
 
 .genre-content p{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     line-height: 1.8;
 }
-
 
 .btn{
     display:inline-block;
@@ -313,21 +299,21 @@ nav a{
     flex-wrap:wrap;
     margin-top:40px;
 }
-/* 
+
 .book-card{
     width:220px;
     text-align:center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-} */
+}
 
-.book-card {
+/* .book-card {
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
     background: #f5f5f5;
     transition: 0.3s ease;
-}
+} */
 
 .book-card.active {
     transform: scale(1.08);
