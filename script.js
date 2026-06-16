@@ -6,7 +6,7 @@ function searchBook() {
         "the hobbit": "fantasy.html",
         "the lord of the rings": "fantasy.html",
         "percy jackson & the lightning thief": "fantasy.html",
-        "mistborn: the final empire": "fantasy.html",
+        "mistborn the final empire": "fantasy.html",
         "eragon": "fantasy.html",
         "the fellowship of the ring": "fantasy.html",
 
