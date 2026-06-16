@@ -31,8 +31,8 @@ function searchBook() {
         "murder on the orient express": "mystery.html",
         "gone girl": "mystery.html",
         "the silent patient": "mystery.html",
-        "the da vinci code": "mystery.html"
-        "the girl with the dragon tattoo": "mystery.html"
+        "the da vinci code": "mystery.html",
+        "the girl with the dragon tattoo": "mystery.html",
     };
 
     // 1️⃣ PAGE REDIRECT CHECK
