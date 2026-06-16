@@ -43,7 +43,7 @@ function searchBook() {
 
 window.addEventListener("DOMContentLoaded", () => {
     let params = new URLSearchParams(window.location.search);
-    let bookName = params.get("book");
+    let bookName = decodeURIComponent(params.get("book"));
 
     if (!bookName) return;
 
