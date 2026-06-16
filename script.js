@@ -5,7 +5,7 @@ function searchBook() {
     let found = false;
 
     bookCards.forEach(book => {
-        let text = book.innerText.toLowerCase();
+       let text = book.querySelector("h3").innerText.toLowerCase();
 
         if (query !== "" && text.includes(query)) {
             book.classList.add("active");
