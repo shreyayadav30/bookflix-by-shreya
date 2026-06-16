@@ -1,6 +1,6 @@
 function searchBook() {
     const searchBox = document.getElementById("searchBox");
-    
+
     if (!searchBox) {
         console.log("Search box not found!");
         return;
@@ -9,7 +9,7 @@ function searchBook() {
     let query = searchBox.value.toLowerCase().trim();
 
     console.log("Searching:", query);
-}
+
     const books = {
         "harry potter": "fantasy.html",
         "the hobbit": "fantasy.html",
@@ -34,14 +34,13 @@ function searchBook() {
         "the love hypothesis": "romance.html",
         "it ends with us": "romance.html",
         "beach read": "romance.html",
-        
 
         "and then there were none": "mystery.html",
         "murder on the orient express": "mystery.html",
         "gone girl": "mystery.html",
         "the silent patient": "mystery.html",
         "the da vinci code": "mystery.html",
-        "the girl with the dragon tattoo": "mystery.html",
+        "the girl with the dragon tattoo": "mystery.html"
     };
 
     // 1️⃣ PAGE REDIRECT CHECK
@@ -50,7 +49,7 @@ function searchBook() {
         return;
     }
 
-    // 2️⃣ UI HIGHLIGHT (same page search)
+    // 2️⃣ UI HIGHLIGHT
     let bookCards = document.querySelectorAll(".book-card");
     let found = false;
 
