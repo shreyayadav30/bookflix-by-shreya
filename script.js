@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (!bookName) return;
 
     let cards = document.querySelectorAll(".book-card");
+    let found = false;
 
     cards.forEach(card => {
         let titleEl = card.querySelector("h3");
@@ -55,13 +56,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
         let text = titleEl.innerText.toLowerCase();
 
-        if (text.includes(bookName.toLowerCase())) {
+        if (text === bookName.toLowerCase()) {
             card.classList.add("active");
 
-            card.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-            });
+            if (!found) {
+                card.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }
+
+            found = true;
+        } else {
+            card.classList.remove("active");
         }
     });
 });
+
