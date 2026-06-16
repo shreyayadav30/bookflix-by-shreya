@@ -1,6 +1,15 @@
 function searchBook() {
-    let query = document.getElementById("searchBox").value.toLowerCase().trim();
+    const searchBox = document.getElementById("searchBox");
+    
+    if (!searchBox) {
+        console.log("Search box not found!");
+        return;
+    }
 
+    let query = searchBox.value.toLowerCase().trim();
+
+    console.log("Searching:", query);
+}
     const books = {
         "harry potter": "fantasy.html",
         "the hobbit": "fantasy.html",
