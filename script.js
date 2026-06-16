@@ -43,33 +43,27 @@ function searchBook() {
 
 window.addEventListener("DOMContentLoaded", () => {
     let params = new URLSearchParams(window.location.search);
-    let bookName = decodeURIComponent(params.get("book"));
+    let bookName = params.get("book");
 
     if (!bookName) return;
 
     let cards = document.querySelectorAll(".book-card");
-    let found = false;
 
     cards.forEach(card => {
         let titleEl = card.querySelector("h3");
         if (!titleEl) return;
 
-        let text = titleEl.innerText.toLowerCase();
+        let text = titleEl.innerText.toLowerCase().trim();
 
-        if (text === bookName.toLowerCase()) {
+        if (text === bookName.toLowerCase().trim()) {
             card.classList.add("active");
 
-            if (!found) {
-                card.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                });
-            }
-
-            found = true;
+            card.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
         } else {
             card.classList.remove("active");
         }
     });
 });
-
