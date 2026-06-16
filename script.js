@@ -2,12 +2,13 @@ function searchBook() {
     let query = document.getElementById("searchBox").value.toLowerCase().trim();
 
     const books = {
-        "harry potter and the philosopher’s stone": "fantasy.html",
+        "harry potter": "fantasy.html",
         "the hobbit": "fantasy.html",
         "the lord of the rings": "fantasy.html",
         "percy jackson & the lightning thief": "fantasy.html",
         "mistborn: the final empire": "fantasy.html",
         "eragon": "fantasy.html",
+        "the fellowship of the ring": "fantasy.html",
 
         "dracula": "horror.html",
         "frankenstein": "horror.html",
