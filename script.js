@@ -15,18 +15,24 @@ function searchBook() {
         "the shining": "horror.html",
         "pet sematary": "horror.html",
         "the haunting of hill house": "horror.html",
+        "bird box": "horror.html",
+        "it": "horror.html",
+        "the exorcist": "horror.html",
 
         "pride and prejudice": "romance.html",
         "the notebook": "romance.html",
         "me before you": "romance.html",
         "the love hypothesis": "romance.html",
         "it ends with us": "romance.html",
+        "beach read": "romance.html",
+        
 
         "and then there were none": "mystery.html",
         "murder on the orient express": "mystery.html",
         "gone girl": "mystery.html",
         "the silent patient": "mystery.html",
         "the da vinci code": "mystery.html"
+        "the girl with the dragon tattoo": "mystery.html"
     };
 
     // 1️⃣ PAGE REDIRECT CHECK
