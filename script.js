@@ -1,14 +1,6 @@
 function searchBook() {
-    const searchBox = document.getElementById("searchBox");
+    let query = document.getElementById("searchBox").value.toLowerCase().trim();
 
-    if (!searchBox) {
-        console.log("Search box not found!");
-        return;
-    }
-
-    let query = searchBox.value.toLowerCase().trim();
-
-    console.log("Searching:", query);
 
     const books = {
         "harry potter": "fantasy.html",
@@ -40,7 +32,7 @@ function searchBook() {
         "gone girl": "mystery.html",
         "the silent patient": "mystery.html",
         "the da vinci code": "mystery.html",
-        "the girl with the dragon tattoo": "mystery.html"
+        "the girl with the dragon tattoo": "mystery.html",
     };
 
     // 1️⃣ PAGE REDIRECT CHECK
@@ -49,7 +41,7 @@ function searchBook() {
         return;
     }
 
-    // 2️⃣ UI HIGHLIGHT
+    // 2️⃣ UI HIGHLIGHT (same page search)
     let bookCards = document.querySelectorAll(".book-card");
     let found = false;
 
