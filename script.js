@@ -47,6 +47,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (!bookName) return;
 
+    bookName = decodeURIComponent(bookName);
+
     let cards = document.querySelectorAll(".book-card");
 
     cards.forEach(card => {
