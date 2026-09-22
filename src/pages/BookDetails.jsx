@@ -13,7 +13,7 @@ function BookDetails() {
         setLoading(true);
 
         const response = await fetch(
-          `http://localhost:5000/api/books/${id}`
+          `https://bookflix-by-shreya.onrender.com/api/books/${id}`
         );
 
         if (!response.ok) {

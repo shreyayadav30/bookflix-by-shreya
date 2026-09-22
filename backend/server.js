@@ -1,5 +1,8 @@
+require("dotenv").config();
+
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 const books = require("./data/books");
 
 const app = express();
@@ -51,6 +54,15 @@ app.get("/api/books/:id", (req, res) => {
 
   res.json(book);
 });
+
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log("MongoDB connected successfully");
+  })
+  .catch((error) => {
+    console.error("MongoDB connection error:", error.message);
+  });
 
 const PORT = process.env.PORT || 5000;
 

@@ -16,7 +16,7 @@ function SearchBar() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/books/search?q=${encodeURIComponent(
+        `https://bookflix-by-shreya.onrender.com/api/books/search?q=${encodeURIComponent(
           searchText
         )}`
       );
